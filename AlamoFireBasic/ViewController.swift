@@ -11,6 +11,7 @@ var tempCopyCountryArray = [Country]()
 var storedCountryArray = [Country]()
 class ViewController: UIViewController {
     
+    
     @IBOutlet weak var countryTableView: UITableView!
     var user: String?
 
@@ -27,9 +28,8 @@ class ViewController: UIViewController {
         let nib = UINib(nibName: "CountryTableViewCell", bundle: nil)
         countryTableView.register(nib, forCellReuseIdentifier: "CountryTableViewCell")
         
-        let headerNib = UINib(nibName: "header", bundle: Bundle.main)
-        countryTableView.register(headerNib, forHeaderFooterViewReuseIdentifier: header.reuseIdentifier)
-        
+       let headerNib = UINib(nibName: "Header", bundle: Bundle.main)
+        countryTableView.register(headerNib, forHeaderFooterViewReuseIdentifier: "header")
         countryTableView.dataSource = self
         countryTableView.delegate = self
         countryTableView.rowHeight = UITableView.automaticDimension
@@ -60,8 +60,8 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource{
         return sections[section].country.count
     }
     
-
     func numberOfSections(in tableView: UITableView) -> Int {
+
         return sections.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -94,8 +94,25 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource{
     /*
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
-        let view = tableView.dequeueReusableHeaderFooterView(withIdentifier: header.reuseIdentifier) as! header
-        view.headerLabel.text = sections[section].name
+          let view = tableView.dequeueReusableHeaderFooterView(withIdentifier: "header") as! Header
+        
+        for i in 0 ..< sections.count - 1{
+            
+            print(sections[i].name)
+        }
+        view.titlLabel.text = sections[section].name
         return view
+    
+        
     }*/
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let backgroundView = UIView(frame: CGRect.zero)
+        let label = UILabel()
+        label.frame = CGRect(x: 200, y: 0, width: 300, height: 30)
+        label.text = sections[section].name
+        backgroundView.addSubview(label)
+        backgroundView.backgroundColor = UIColor(white: 0.5, alpha: 0.5)
+        return backgroundView
+    }
 }

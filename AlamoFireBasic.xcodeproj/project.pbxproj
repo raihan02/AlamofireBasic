@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7506034D23FEBA2A00DD5993 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7506034C23FEBA2A00DD5993 /* Header.swift */; };
+		7506034F23FEBA3700DD5993 /* Header.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7506034E23FEBA3700DD5993 /* Header.xib */; };
 		7509F86D23FE3FAC008F3CFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7509F86C23FE3FAC008F3CFC /* AppDelegate.swift */; };
 		7509F86F23FE3FAC008F3CFC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7509F86E23FE3FAC008F3CFC /* SceneDelegate.swift */; };
 		7509F87123FE3FAC008F3CFC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7509F87023FE3FAC008F3CFC /* ViewController.swift */; };
@@ -18,12 +20,12 @@
 		75BC5E6923FE53BE008326D7 /* CountryMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BC5E6823FE53BE008326D7 /* CountryMode.swift */; };
 		75BC5E6D23FE5605008326D7 /* CountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BC5E6B23FE5605008326D7 /* CountryTableViewCell.swift */; };
 		75BC5E6E23FE5605008326D7 /* CountryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75BC5E6C23FE5605008326D7 /* CountryTableViewCell.xib */; };
-		75BC5E8A23FEA4D0008326D7 /* header.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75BC5E8923FEA4D0008326D7 /* header.xib */; };
-		75BC5E8C23FEA520008326D7 /* header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BC5E8B23FEA520008326D7 /* header.swift */; };
 		D4B3A567C5951B9688C2AFBC /* Pods_AlamoFireBasic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9257885A2E0D81C2E69D935 /* Pods_AlamoFireBasic.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7506034C23FEBA2A00DD5993 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		7506034E23FEBA3700DD5993 /* Header.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Header.xib; sourceTree = "<group>"; };
 		7509F86923FE3FAC008F3CFC /* AlamoFireBasic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlamoFireBasic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7509F86C23FE3FAC008F3CFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7509F86E23FE3FAC008F3CFC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,8 +39,6 @@
 		75BC5E6823FE53BE008326D7 /* CountryMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryMode.swift; sourceTree = "<group>"; };
 		75BC5E6B23FE5605008326D7 /* CountryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableViewCell.swift; sourceTree = "<group>"; };
 		75BC5E6C23FE5605008326D7 /* CountryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryTableViewCell.xib; sourceTree = "<group>"; };
-		75BC5E8923FEA4D0008326D7 /* header.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = header.xib; sourceTree = "<group>"; };
-		75BC5E8B23FEA520008326D7 /* header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = header.swift; sourceTree = "<group>"; };
 		8DE150867D3032F9139F7629 /* Pods-AlamoFireBasic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamoFireBasic.release.xcconfig"; path = "Target Support Files/Pods-AlamoFireBasic/Pods-AlamoFireBasic.release.xcconfig"; sourceTree = "<group>"; };
 		C11FB706579FF96C5977297D /* Pods-AlamoFireBasic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamoFireBasic.debug.xcconfig"; path = "Target Support Files/Pods-AlamoFireBasic/Pods-AlamoFireBasic.debug.xcconfig"; sourceTree = "<group>"; };
 		E9257885A2E0D81C2E69D935 /* Pods_AlamoFireBasic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlamoFireBasic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,8 +97,8 @@
 			children = (
 				75BC5E6B23FE5605008326D7 /* CountryTableViewCell.swift */,
 				75BC5E6C23FE5605008326D7 /* CountryTableViewCell.xib */,
-				75BC5E8923FEA4D0008326D7 /* header.xib */,
-				75BC5E8B23FEA520008326D7 /* header.swift */,
+				7506034C23FEBA2A00DD5993 /* Header.swift */,
+				7506034E23FEBA3700DD5993 /* Header.xib */,
 			);
 			path = NibFiles;
 			sourceTree = "<group>";
@@ -181,9 +181,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				75BC5E6E23FE5605008326D7 /* CountryTableViewCell.xib in Resources */,
+				7506034F23FEBA3700DD5993 /* Header.xib in Resources */,
 				7509F87C23FE3FAD008F3CFC /* LaunchScreen.storyboard in Resources */,
 				7509F87923FE3FAD008F3CFC /* Assets.xcassets in Resources */,
-				75BC5E8A23FEA4D0008326D7 /* header.xib in Resources */,
 				7509F87423FE3FAC008F3CFC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -237,7 +237,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75BC5E8C23FEA520008326D7 /* header.swift in Sources */,
+				7506034D23FEBA2A00DD5993 /* Header.swift in Sources */,
 				7509F87123FE3FAC008F3CFC /* ViewController.swift in Sources */,
 				7509F87723FE3FAC008F3CFC /* AlamoFireBasic.xcdatamodeld in Sources */,
 				7509F86D23FE3FAC008F3CFC /* AppDelegate.swift in Sources */,
