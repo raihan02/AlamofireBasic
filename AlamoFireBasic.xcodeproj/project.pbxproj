@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7506034D23FEBA2A00DD5993 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7506034C23FEBA2A00DD5993 /* Header.swift */; };
 		7506034F23FEBA3700DD5993 /* Header.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7506034E23FEBA3700DD5993 /* Header.xib */; };
+		75074590240223ED00201EF0 /* CountryTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7507458F240223ED00201EF0 /* CountryTableView.swift */; };
 		7509F86D23FE3FAC008F3CFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7509F86C23FE3FAC008F3CFC /* AppDelegate.swift */; };
 		7509F86F23FE3FAC008F3CFC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7509F86E23FE3FAC008F3CFC /* SceneDelegate.swift */; };
 		7509F87123FE3FAC008F3CFC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7509F87023FE3FAC008F3CFC /* ViewController.swift */; };
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		7506034C23FEBA2A00DD5993 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		7506034E23FEBA3700DD5993 /* Header.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Header.xib; sourceTree = "<group>"; };
+		7507458F240223ED00201EF0 /* CountryTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableView.swift; sourceTree = "<group>"; };
 		7509F86923FE3FAC008F3CFC /* AlamoFireBasic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlamoFireBasic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7509F86C23FE3FAC008F3CFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7509F86E23FE3FAC008F3CFC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +58,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7507458C240221F400201EF0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7507458F240223ED00201EF0 /* CountryTableView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		7509F86023FE3FAC008F3CFC = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +87,7 @@
 		7509F86B23FE3FAC008F3CFC /* AlamoFireBasic */ = {
 			isa = PBXGroup;
 			children = (
+				7507458C240221F400201EF0 /* Views */,
 				75BC5E6A23FE55D5008326D7 /* NibFiles */,
 				7509F86C23FE3FAC008F3CFC /* AppDelegate.swift */,
 				7509F86E23FE3FAC008F3CFC /* SceneDelegate.swift */,
@@ -239,6 +250,7 @@
 			files = (
 				7506034D23FEBA2A00DD5993 /* Header.swift in Sources */,
 				7509F87123FE3FAC008F3CFC /* ViewController.swift in Sources */,
+				75074590240223ED00201EF0 /* CountryTableView.swift in Sources */,
 				7509F87723FE3FAC008F3CFC /* AlamoFireBasic.xcdatamodeld in Sources */,
 				7509F86D23FE3FAC008F3CFC /* AppDelegate.swift in Sources */,
 				75BC5E6923FE53BE008326D7 /* CountryMode.swift in Sources */,
